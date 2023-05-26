@@ -72,9 +72,11 @@ Once the student has finished the segmentation, the "Finish" bottom will save th
 The function *sliceCallBack('RESULTSMODE') modifies the interface to display the results for each segmented structure. This interface is implemented with three main functions *contourFrame('RESULTS','INIT')*, *contourFrame('RESULTS','REFRESH')* and *contourFrame('RESULTS','SELECTSTRUCT')*
 
 Example of the results bar:
+
 <img width="200" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/b424baca-aeee-407d-9a2f-ee8f301dd631">
 
 The student will be able to see his segmentation and the gold standard simultaneously and in different views:
+
 <img width="405" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/f7ad0545-54bc-4470-aec4-c4caf2b1df69">
 <img width="470" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/18285dfb-f646-413f-afdb-705b283417b4">
 
