@@ -27,7 +27,7 @@ The only requirements to download the application are:
 
 The provided demos can serve you as guidance on the different functionalities of TUSTOOL.
 
-### IMPLEMENTATION CODE
+### CODE IMPLEMENTATION 
 
 The application TUSTOOL communicates with the database REDCap (Research Electronic Data Capture) for the import/export of oncological cases that have been previously uploaded by a specialist.
 
