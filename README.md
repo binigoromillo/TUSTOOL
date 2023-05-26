@@ -59,7 +59,7 @@ The calls to *sliceCallBack()* that will be used in this applications are:
 
 <img width="452" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/5fb2d512-c4b6-43bc-b321-764019cff83b">
 
-- *sliceCallBack('OPENNEWPLANC'): Loads the images to the interface as well as all the information relative to the student and the case that is being segmented. 
+- *sliceCallBack('OPENNEWPLANC')*: Loads the images to the interface as well as all the information relative to the student and the case that is being segmented. 
 
 <img width="454" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/1c2a1802-e15a-499a-8017-3640b97803c5">
 
