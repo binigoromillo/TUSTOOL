@@ -37,12 +37,24 @@ The majority of this code has been implemented in Matlab due to the computationa
 
 This implementation uses part of the code provided in CERR, a matlab open source for the development and exchange of results during radiotherapy planification. It enables the format conversion from DICOM to matfile, it provides a module for the visualization of cases in different views, and it provides some tools to contour anatomical structures.
 
-The import and export operations through the REDCap API are implemented by integrating cURL to the Matlab code. This is done with the function *webwrite()* that sends queries throught the RESTful web service. 
-These operations have been implemented in the following functions, that create a JSON file based on the input parameters and call the function *importar()* that handles the API query sent to REDCap: 
+The import and export operations through the REDCap API are implemented by integrating cURL into the Matlab code. This is done with the function *webwrite()* that sends queries through the RESTful web service. 
+
+The import operations have been implemented in the following functions, which create a JSON file based on the input parameters and call the function *importar()* that handles the API query sent to REDCap: 
   - *importar_alumnos()*
   - *importar_especialistas()*
   - *importar_casos()*
   - *importar_resultados()*
+
+In order to retrieve data from REDCap, we use the function *exportar()*.
+
+#### Segmentation interface
+
+For the segmentation interface, the following functions were created similarly to CERR but with some functionality and design modifications:
+  - *sliceCallBack()*: Main function that creates and updates the images visualization interface. This function creates and handles two variables:
+    - **planC**: Stores the information corresponding to the case that will be segmented (including the gold standard).
+    - **stateC**: Stores the information corresponding to the state of the operations carried out during the segmentation (segmentation tools, selected view...).
+
+
 
 
 
