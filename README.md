@@ -16,6 +16,8 @@ This project aims to enhance the training of medical residents in tumor segmenta
 
 *Note*: Most titles and instructions provided in this application are in Spanish. However, the code includes comments in english and the user manual comes with very intuitive visual support to make it accessible to everyone.
 
+Find all the code here: https://drive.google.com/drive/folders/1sB2kruhESob0nOpm9p1NOTdVUT9bwWdq?usp=sharing
+
 ### TUSTOOL INSTALLATION
 
 *Note*: Currently, this application can only be used by faculty or students of the Ramón y Cajal Hospital since only they have access to the REDCap server and own a token needed for its API.
