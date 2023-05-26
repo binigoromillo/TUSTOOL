@@ -18,14 +18,14 @@ This project aims to enhance the training of medical residents in tumor segmenta
 
 ### TUSTOOL INSTALLATION
 
+*Note*: Currently, this application can only be used by faculty or students of the Ramón y Cajal Hospital since only they have access to the REDCap server and own a token needed for its API.
+
 Follow the instructions in the document "manual_de_usuario".
 The only requirements to download the application are:
   - MATLAB Runtime (https://es.mathworks.com/products/compiler/matlab-runtime.html)
   - A local folder with the gold standard of the cases ("Casos"). It is already located in the installation zip folder.
 
 The provided demos can serve you as guidance on the different functionalities of TUSTOOL.
-
-*Note*: Currently, this application can only be used by faculty or students of the Ramón y Cajal Hospital since only they have access to the REDCap server and own a token needed for its API.
 
 ### IMPLEMENTATION CODE
 
