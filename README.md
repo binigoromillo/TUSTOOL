@@ -77,10 +77,10 @@ Example of the results bar:
 
 The student will be able to see his segmentation and the gold standard simultaneously and in different views:
 
-<img width="405" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/f7ad0545-54bc-4470-aec4-c4caf2b1df69">
-<img width="470" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/18285dfb-f646-413f-afdb-705b283417b4">
+<img width="487" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/cd87ec01-df5a-4d25-b05a-2ceb3b591e28">
+<img width="487" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/ee5a36b0-1b2b-43b8-bb12-59e2ea82cefe">
 
 
-
+I hope you found it useful! Reach me out through linkedin if you want to chat about the project. :)
 
 
