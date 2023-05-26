@@ -16,7 +16,7 @@ This project aims to enhance the training of medical residents in tumor segmenta
 
 *Note*: Most titles and instructions provided in this application are in Spanish. However, the code includes comments in english and the user manual comes with very intuitive visual support to make it accessible to everyone.
 
-Find all the code here: https://drive.google.com/drive/folders/1sB2kruhESob0nOpm9p1NOTdVUT9bwWdq?usp=sharing
+Find the code, demos and installation package here: https://drive.google.com/drive/folders/1sB2kruhESob0nOpm9p1NOTdVUT9bwWdq?usp=sharing
 
 ### TUSTOOL INSTALLATION
 
