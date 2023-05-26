@@ -14,7 +14,7 @@ This project aims to enhance the training of medical residents in tumor segmenta
 
 **Radiation oncologists can** autonomously incorporate new medical cases into the system and can display the results obtained by the medical residents. In this way, TUSTOOL allows the continuous monitoring of students and works as a support mechanism to evaluate their performance in this field.
 
-Note: All the resources provided for this application are in Spanish. However, the user manual comes with very intuitive visual support to make it accessible to everyone.
+*Note*: Most titles and instructions provided in this application are in Spanish. However, the code includes comments in english and the user manual comes with very intuitive visual support to make it accessible to everyone.
 
 ### TUSTOOL INSTALLATION
 
@@ -53,6 +53,30 @@ For the segmentation interface, the following functions were created similarly t
   - *sliceCallBack()*: Main function that creates and updates the images visualization interface. This function creates and handles two variables:
     - **planC**: Stores the information corresponding to the case that will be segmented (including the gold standard).
     - **stateC**: Stores the information corresponding to the state of the operations carried out during the segmentation (segmentation tools, selected view...).
+
+The calls to *sliceCallBack()* that will be used in this applications are:
+- *sliceCallBack('INIT')*: Initializes *planC*, *stateS* and *ref* (cell variable containing the gold standard) and adds the graphic components to the interface.
+
+<img width="452" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/5fb2d512-c4b6-43bc-b321-764019cff83b">
+
+- *sliceCallBack('OPENNEWPLANC'): Loads the images to the interface as well as all the information relative to the student and the case that is being segmented. 
+
+<img width="454" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/1c2a1802-e15a-499a-8017-3640b97803c5">
+
+- *sliceCallBack('CONTOURMODE')*: Uses the functions *controlFrame()* and *contourControl()* to include the contouring tools into the interface so that the student can start segmenting.
+
+<img width="408" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/9a9ad9a6-3b98-4a48-8cb8-3e291170ca69">
+
+Once the student has finished the segmentation, the "Finish" bottom will save the results and compute the similarity metrics with the gold standard stored in *ref*. Finally, the results of the metrics as well as the final calification are imported as a new register in the "Results" table in REDCap.
+
+The function *sliceCallBack('RESULTSMODE') modifies the interface to display the results for each segmented structure. This interface is implemented with three main functions *contourFrame('RESULTS','INIT')*, *contourFrame('RESULTS','REFRESH')* and *contourFrame('RESULTS','SELECTSTRUCT')*
+
+Example of the results bar:
+<img width="200" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/b424baca-aeee-407d-9a2f-ee8f301dd631">
+
+The student will be able to see his segmentation and the gold standard simultaneously and in different views:
+<img width="405" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/f7ad0545-54bc-4470-aec4-c4caf2b1df69">
+<img width="470" alt="image" src="https://github.com/binigoromillo/TUSTOOL/assets/123977045/18285dfb-f646-413f-afdb-705b283417b4">
 
 
 
